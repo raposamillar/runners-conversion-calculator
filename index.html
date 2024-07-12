@@ -9,10 +9,8 @@
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -22,11 +20,19 @@
     <main class="units">
       <div class="column-1">
         <h2>Imperial</h2>
-        <div class="distance" id="imperial-distance">0</div>
+        <span class="distance" id="imperial-distance">0</span>
+        <div class="button-container" id="imperial-buttons">
+          <button class="plus-button" id="plus-imperial" onclick="addMiles(1)">+</button>
+          <button class="minus-button" id="minus-imperial" onclick="subtractMiles(-1)">-</button>
+        </div>
       </div>
       <div class="column-2">
         <h2>Metric</h2>
-        <div class="distance" id="metric-distance">0</div>
+        <span class="distance" id="metric-distance">0</span>
+        <div class="button-container" id="metric-buttons">
+          <button class="plus-button" id="plus-metric" onclick="addKilometers(1)">+</button>
+          <button class="minus-button" id="minus-metric" onclick="subtractKilometers(-1)">-</button>
+        </div>
       </div>
       <div class="map">
         <iframe width="80%" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-79.8369598388672%2C43.558998366855526%2C-79.08714294433595%2C43.87611806075357&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=11/43.7178/-79.4621">View Larger Map</a></small>
