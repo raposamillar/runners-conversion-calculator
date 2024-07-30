@@ -23,7 +23,10 @@ body {
 .header {
   height: 25vh;
   width: 100%;
-  background-color: var(--tertiary-color);
+  position: relative;
+  background: URL(assets/images/sneakers-bg-1200x150px.jpg);
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,6 +39,9 @@ body {
   font-style: oblique;
   font-size: 44px;
   color: var(--primary-color);
+  position: relative;
+  z-index: 1;
+  text-shadow: 1px 1px 0 var(--text-color-2);
 }
 
 .sneaker-logo {
